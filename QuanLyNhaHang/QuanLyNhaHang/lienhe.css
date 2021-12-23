@@ -1,0 +1,60 @@
+﻿
+.khung{
+    width:55%;
+    background-color:aqua;
+    margin:0 auto;
+}
+.khungtrai {
+    width: 50%;
+    float: left;
+    font-family: 'Times New Roman';
+}
+    .khungtrai a {
+        text-decoration: none;
+        font-size:20px;
+    }
+.khungphai {
+    width: 50%;
+    height: 650px;
+    background-color: gainsboro;
+    float: right;
+    margin-bottom: 100px;
+}
+
+.khungtren {
+    height: 100px;
+    background-color: brown;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-weight: 300;
+    padding-top: 35px;
+    font-family: 'Times New Roman';
+}
+.khungduoi{
+}
+.khungduoitrong {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 15px;
+   text-align:center;
+   font-weight:bold;
+   color:red;
+   font-size:30px;
+}
+.gui a {
+    float: right;
+    text-decoration: none;
+    border-radius: 50% 50%;
+    background-color: coral;
+    color: white;
+    padding: 15px 15px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px, 0 0 25px, 0 0 5px;
+}
+.bando{
+    clear:both;
+    width:80%;
+    margin: 0 auto;
+    height:600px;
+}

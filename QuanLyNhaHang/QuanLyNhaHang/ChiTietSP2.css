@@ -1,0 +1,250 @@
+﻿body {
+}
+
+.motsp {
+    width: 1900px;
+    margin-bottom: 100px;
+}
+
+#left {
+    float: left;
+    width: 630px;
+    background-color: brown;
+}
+
+#right {
+    float: right;
+    width: 1000px;
+    margin-right: 100px;
+    padding: 20px;
+    box-shadow: 0 0 25px gainsboro, 0 0 5px whitesmoke;
+}
+
+.gia {
+    margin-left: 25%;
+    float: left;
+    width: 40%;
+    color: white;
+}
+
+#thanhngang {
+    float: right;
+    width: 30%;
+}
+
+#thanhngang2 {
+    float: right;
+}
+
+#marqq {
+    width: 1900px;
+}
+
+#rung:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#rung a {
+    text-decoration: none;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, 1px) rotate(-1deg);
+    }
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/chuyen-to-chuc-tiec.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 500px;
+    width: 1900px;
+    padding-top: 10%;
+    padding-left: 6%;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+    z-index: 100;
+}
+
+    .hero-text a {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        background-color: #ddd;
+        text-align: center;
+        cursor: pointer;
+        z-index: 100;
+        text-decoration: none;
+        border-radius: 50% 50%;
+    }
+
+        .hero-text a:hover {
+            background-color: #555;
+            color: white;
+            z-index: 100;
+        }
+
+.main-phai h1 {
+    position: relative;
+    animation: mymove1 5s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+#right {
+    position: relative;
+    animation: mymove2 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    left: 1200px;
+}
+@keyframes mymove2 {
+    from {
+        left: 1200px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+
+#trai {
+    height: 700px;
+}
+
+@keyframes mymove1 {
+    from {
+        color: white;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+.main-phai h2 {
+    position: relative;
+    animation: mymove 8s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 800px;
+    }
+}
+
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    #myImg:hover {
+        opacity: 0.7;
+        z-index: 99999;
+    }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1700px;
+    z-index: 99999;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    z-index: 99999;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+#nhapsl {
+    float: left;
+    width: 15%;
+}
+
+#f {
+    float: left;
+}
+
+#share {
+    float: right;
+}

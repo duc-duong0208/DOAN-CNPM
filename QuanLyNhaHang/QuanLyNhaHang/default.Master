@@ -1,0 +1,274 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="QuanLyNhaHang._default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="default9.css" rel="stylesheet" />
+    <script src="default.js"></script>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        .auto-style2 {
+            float: left;
+            width: 29%;
+            height: 500px; 
+            padding-left: 10%;
+            margin-right: 0px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+     
+    </style>
+    <meta charset ="utf-8" />
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0" nonce="Ywzqt9y9"></script></head>
+<body>
+    <form id="form1" runat="server">
+         <div class="outer">
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            window.onscroll = function () { scrollFunction() };
+            function scrollFunction() {
+                if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+             <div id="me">
+            <div class="menu-phai">
+                  <a id="iddn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> <img id="icondangnhap" src="Images/login.png" />   <span class="hienra">Đăng Nhập</span></a>                
+                 <div id="id01" class="modal1">
+  
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Images/dangnhap.jfif" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container2">
+              <input type="text" required class="auto-style3">
+        <asp:Label ID="Label1" runat="server" Text="Username" ForeColor="Red" Font-Bold="True"></asp:Label>
+        <asp:TextBox ID="txt_user" placeholder=" Nhập Username"  runat="server" Width="100%" Height="10%" ForeColor="White"></asp:TextBox>
+               <input type="text" required class="auto-style3">
+        <asp:Label ID="Label2" runat="server" Text="Password" ForeColor="Red" Font-Bold="True"></asp:Label>
+        <asp:TextBox ID="txt_pass"  placeholder=" Nhập Password" runat="server" Width="100%" Height="10%" ForeColor="White" TextMode="Password"></asp:TextBox>
+        <br />
+        <asp:LinkButton ID="LinkButton6" runat="server" Font-Bold="True" OnClick="LinkButton6_Click" Width="100%">ĐĂNG NHẬP</asp:LinkButton>
+              <br />
+       <input type="checkbox" checked="checked" name="remember">  <asp:Label ID="Label3" runat="server" Text="Remember me" ForeColor="White"></asp:Label>
+    </div>
+
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+ 
+</div>
+
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+             <a href="TrangChu.aspx">
+            <div class="slide">         
+            <div class="slide_1 ra"> 
+                <img src="Images/logo.png"width="280px" height="180px"  />
+           </div>
+            <div class="slide_2"> 
+                <img src="Images/logo2.png"width="280px" height="180px" />                
+            </div>
+            <div class="slide_3"> 
+                <img src="Images/logo1.png" width="280px" height="180px"/>
+            </div>
+                </div>  
+                 </a>
+                <div id="wrapper">
+                    <ul>
+                        <li><a href="TrangChu.aspx">TRANG CHỦ</a></li>
+                        <li><a href="WebForm5.aspx">GIỚI THIỆU</a></li>
+                        <li>
+                            <asp:LinkButton ID="LinkButton5" OnClick="LinkButton5_Click"  runat="server">Thực Đơn</asp:LinkButton>
+                        <ul>
+                             <li>   <asp:DataList ID="DataList1" runat="server">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="LinkButton2" OnClick="LinkButton2_Click" runat="server" Text='<%# Eval("TenLoaiMon") %>'
+                                    CommandArgument='<%# Eval("MaLoaiMon") %>'></asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:DataList></li>
+       
+                        </ul>
+                        <li><a href="DatMon.aspx">ĐẶT MÓN</a></li>
+                        <li><a href="WebForm5.aspx">TUYỂN DỤNG</a></li>
+                        <li><a href="LienHe.aspx">LIÊN HỆ</a></li>
+                    </ul>
+                 </div>
+            </div>
+          <div class="timkiem">          
+            <asp:TextBox ID="TextBox1" runat="server" placeholder="Tìm Theo Mã, Tên Món Ăn Gần Đúng " BorderStyle="None" TextMode="Search"></asp:TextBox>
+            <asp:LinkButton ID="LinkButton1" OnClick="LinkButton1_Click" runat="server"><img id="icontimkiem" src="Images/timkiem.jpg" /></asp:LinkButton>
+          
+        </div> 
+             
+        <div class="sideshow">
+            <div class="sideshowbgr">
+         <div class="slidee">               
+            <div class="slidee_1 ra"> 
+                <img src="Images/denhatheotoc.jpg" width="1990px" height="700px" />
+            </div>
+            <div class="slidee_2">    
+                <img src="Images/lauvua.jpg" width="1990px" height="700px"/>
+            </div>
+            <div class="slidee_3">    
+                <img src="Images/chuyentochuctiec.jpg"width="1990px" height="700px" />
+            </div>
+            <div class="slidee_4">    
+                <img src="Images/trantritiec.jpg"width="1990px" height="700" />
+            </div>
+        </div>
+        <div class="nut">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+                </div>
+    </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          var nut = document.querySelectorAll('div.nut ul li');
+          var slides = document.querySelectorAll('div.slidee div');
+          for (var i = 0; i < nut.length; i++) {
+              nut[i].addEventListener('click', function () {
+                  var nutnay = this;
+                  var vitrislide = 0;
+                  console.log(nutnay.previousElementSibling);
+                  for (var i = 0; nutnay = nutnay.previousElementSibling; vitrislide++) {
+                      //chay den khi nut nay  = null thi dung.
+                      // chay xong lenh nay khi click vao nut ta lay dc vitrislide
+                  }
+                  for (var i = 0; i < slides.length; i++) {
+                      slides[i].classList.remove('ra');
+                  }
+                  for (var i = 0; i < slides.length; i++) {
+                      slides[vitrislide].classList.add('ra');
+                  }
+              })
+          }
+          // Click chuyen slide
+          auto();
+          function auto() {
+              var thoigian = setInterval(function () {
+                  var slide = document.querySelector('div.slidee div.ra');
+                  var vitrislide = 0;
+                  for (var i = 0; slide = slide.previousElementSibling; vitrislide++) {
+                  }
+                  for (var i = 0; i < slides.length; i++) {
+                      slides[i].classList.remove('ra'); // remove hết những thằng đang có class 'ra'
+                  }
+                  if (vitrislide == slides.length - 1) {
+                      slides[0].classList.add('ra');
+                      // Thằng này có nghĩa là sau khi tự động chuyển đến slide cuối cùng nó quay lại thằng 0
+                  }
+                  else {
+                      slides[vitrislide].nextElementSibling.classList.add('ra');
+                      // Đây là then chốt của auto slide nó sẽ chuyển sang cái thằng tiếp theo.
+                  }
+              }, 3000)
+              // Tu dong chuyen slide
+              for (var i = 0; i < 4; i++) {
+                  nut[i].addEventListener('click', function () {
+                      clearInterval(thoigian);
+                      //Click vào một nút bất kì dừng auto chuyển slide
+                  })
+              }
+              // Dung tu dong chuyen slide
+          }
+      }, false)
+  </script>
+           </div>      
+        <div class="main-trai"></div>
+        <div class="main-phai">
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      </div>
+        <div class="content">   
+<div class="row">
+  <div class="auto-style2" style="background-color:black;">
+    <h4>TTHQ Restaurants </h4>
+
+      </br>
+Địa chỉ: k131 - Lý Thái Tổ - Thanh Khê - Đà Nẵng
+            </br>
+
+Điện thoại: 0944889999
+            </br>
+
+Tư vấn & nhận tiệc: 0944889999
+            </br>
+
+Emai: tthq_restaurants239@gmail.com
+            </br>
+
+Website: https://www.tthqrestaurants.com
+            </br>
+      <div id="icon">
+         <a href="https://www.facebook.com/"><img src="Images/KGNH/fb.png" /></a> <a href="https://www.instagram.com/"><img src="Images/KGNH/inta.png" /></a><a href="https://mail.google.com/mail/u/0/#inbox"><img src="Images/KGNH/gmail.png" /></a>
+
+      </div>
+  </div>
+  <div class="column" style="background-color:black;">
+    <h4>Google map</h4>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.9855102123793!2d108.20642121478537!3d16.066241688882727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219fbf01196f3%3A0x9a3a91800ef99441!2sTTHQ%20Restaurant!5e0!3m2!1svi!2s!4v1603895856191!5m2!1svi!2s" width="420" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </div>
+  <div class="column" style="background-color:black;">
+    <h4>Facebook</h4>
+<div class="fb-page" data-href="https://www.facebook.com/TTHQ-Restaurant-103210365069380" data-tabs="timeline" data-width="" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/TTHQ-Restaurant-103210365069380" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TTHQ-Restaurant-103210365069380">TTHQ Restaurant</a></blockquote></div>  </div>
+
+</div>
+</div>
+
+             <!-- Load Facebook SDK for JavaScript -->
+   <script>
+       window.fbAsyncInit = function () {
+           FB.init({
+               appId: "1784956665094089",
+               xfbml: true,
+               version: "v2.6"
+           });
+       };
+       (function (d, s, id) {
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) { return; }
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+           fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+   </script>
+                                                <div class="fb-customerchat" page_id="102083478518494"></div>
+         </div>  
+  
+    </form>
+</body>
+</html>

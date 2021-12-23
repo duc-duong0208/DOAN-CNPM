@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="QuanLyAdmin.master.cs" Inherits="QuanLyNhaHang.QuanLyAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="qladmin4.css" rel="stylesheet" />
+</head>
+     <meta charset ="utf-8" />
+<body>
+    <form id="form1" runat="server">
+        <div id="banner">
+            <h2>ADMIN MANAGEMENT</h2>
+        </div>
+        <div id="tenql">
+            <asp:HyperLink ID="HyperLink1" NavigateUrl="~/TrangChu.aspx" runat="server">>>Exit<<</asp:HyperLink>
+            <div id="khuontenql">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+        <div id="menu">
+            <div id="wrapper">
+                <ul>
+                    <li>
+                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">TÀI KHOẢN</asp:LinkButton></li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">LOẠI SẢN PHẨM</asp:LinkButton></li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">ĐƠN HÀNG</asp:LinkButton></li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">THỐNG KÊ</asp:LinkButton></li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">LIÊN HỆ</asp:LinkButton></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="maingrv">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div>
+        </div>
+    </form>
+</body>
+</html>

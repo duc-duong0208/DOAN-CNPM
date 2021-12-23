@@ -1,0 +1,308 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outer {
+    width: 1990px;
+}
+
+.timkiem {
+    background-color: black;
+    height: 50px;
+    clear: both;
+}
+
+#iddn {
+    float: right;
+    text-decoration: none;
+    margin-right: 2%;
+    margin-top: 10px;
+    font-size: 20px;
+    -webkit-border-radius: 34px 34px 34px 34px;
+    -moz-border-radius: 34px 34px 34px 34px;
+    border-radius: 34px 34px 34px 34px;
+    font-family: poppins;
+}
+
+    #iddn .hienra {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        right: 2px;
+        top: 50px;
+    }
+
+    #iddn:hover .hienra {
+        visibility: visible;
+    }
+
+#icondangnhap {
+    margin-top: 10px;
+    height: 50px;
+    width: 45px;
+    float: right;
+}
+
+#icontimkiem {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+#TextBox1 {
+    margin-right: 2px;
+    margin-top: 22px;
+    float: left;
+    margin-left: 34%;
+    height: 30px;
+    width: 600px;
+    -webkit-border-radius: 34px 34px 34px 34px;
+    -moz-border-radius: 34px 34px 34px 34px;
+    border-radius: 34px 34px 34px 34px;
+    border: 1px solid black;
+    background-color: #ddd;
+}
+
+#me {
+    background-color: black;
+}
+
+.menu-phai {
+    width: 100%;
+}
+
+#LinkButton5 {
+    position: fixed;
+}
+
+#wrapper {
+    width: 60%;
+    margin-left: 22%;
+    position: fixed;
+    z-index: 999;
+}
+
+    #wrapper ul {
+        list-style: none;
+        cursor: pointer;
+    }
+
+        #wrapper ul li a {
+            background: black;
+            width: 170px;
+            border: 1px solid #fff;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            color: #fff;
+            font-size: 16px;
+            position: relative;
+            font-family: poppins;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #wrapper ul li {
+            background: black;
+            width: 170px;
+            border: 1px solid #fff;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            color: #fff;
+            font-size: 16px;
+            position: relative;
+            font-family: poppins;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+            #wrapper ul li a:hover {
+                background: red;
+            }
+
+        #wrapper ul ul {
+            display: none;
+        }
+
+        #wrapper ul li:hover > ul {
+            display: block;
+        }
+
+        #wrapper ul ul ul {
+            margin-left: 170px;
+            top: 0;
+            position: absolute;
+        }
+
+.menu-phai ul {
+    list-style: none;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.slide_1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+}
+
+.slide_2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+}
+
+.slide_3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+}
+
+.ra {
+    transition: 3s;
+    transform-style: inherit;
+    opacity: 1.5;
+}
+
+.sideshowbgr {
+    background-color: black;
+    ;
+}
+
+.sideshow {
+    margin-top: 110px;
+    height: 750px;
+    background-color: white;
+}
+
+.slidee_1 {
+    position: absolute;
+    opacity: 0;
+}
+
+.slidee_2 {
+    position: absolute;
+    opacity: 0;
+}
+
+.slidee_3 {
+    position: absolute;
+    opacity: 0;
+}
+
+.slidee_4 {
+    position: absolute;
+    opacity: 0;
+}
+
+.nut {
+    position: absolute;
+    left: 1040px;
+    margin-top: 695px;
+    transform: translateX(-50%);
+    z-index: 999;
+    height: 31px;
+    width: 200px;
+}
+
+    .nut ul li {
+        width: 10px;
+        height: 10px;
+        border: 2px solid black;
+        display: inline-block;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+        .nut ul li:hover {
+            background-color: black;
+        }
+
+.ra {
+    transition: 1.5s;
+    opacity: 1;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    left: 28px;
+    bottom: 18px;
+    z-index: 999;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+
+
+.main-trai {
+    float: left;
+    clear: both;
+}
+
+.main-phai {
+    width: 98.5%;
+    float: right;
+}
+
+.content {
+    height: 500px;
+    clear: both;
+    background-color: black;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content h4 {
+    color: red;
+    font-size: 32px;
+    text-align: center;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 29%;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+    padding-left: 10%;
+}
+
+/* Clear floats asfter the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#icon {
+    width: 230px;
+    margin: 0 auto;
+}

@@ -1,0 +1,86 @@
+﻿#iddn {
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: red;
+    color: black;
+    width: 0;
+    cursor: pointer;
+    border-radius: 50px 50px;
+    padding:3px 3px;
+
+}
+
+    #iddn .hienra {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        right: 2px;
+        top: 70px;
+    }
+
+    #iddn:hover .hienra {
+        visibility: visible;
+    }
+
+#icondangnhap {
+    margin-top: 10px;
+    height: 50px;
+    width: 45px;
+    float: right;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.container2 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    top: 320px;
+    width: 83%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 2px;
+}
+
+/* Modal Content/Box */
+.modal1-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }

@@ -1,0 +1,393 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2DEECF4-A824-463D-8E97-2F8A4D53B3C3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyNhaHang</RootNamespace>
+    <AssemblyName>QuanLyNhaHang</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44344</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="BanChay.aspx" />
+    <Content Include="ChiTietSP.aspx" />
+    <Content Include="ChiTietSP2.css" />
+    <Content Include="DatHang.aspx" />
+    <Content Include="dathang.css" />
+    <Content Include="DatMon.aspx" />
+    <Content Include="datmon4.css" />
+    <Content Include="default.js" />
+    <Content Include="default9.css" />
+    <Content Include="dsd.css" />
+    <Content Include="GiamDan.aspx" />
+    <Content Include="GiaTangDan.aspx" />
+    <Content Include="Images\baba-dot-muoi-vi-ngon-kho-cuong.jpg" />
+    <Content Include="Images\banh-beo.jpg" />
+    <Content Include="Images\banh-khot.jpg" />
+    <Content Include="Images\banhbotloc.jpg" />
+    <Content Include="Images\banhnam.jpg" />
+    <Content Include="Images\ca-chinh-nuong-muoit-ot.jpg" />
+    <Content Include="Images\ca-mat-quy1.jpg" />
+    <Content Include="Images\ca-mu-hap-hong-kong-danh-thuc-vi-giac.jpg" />
+    <Content Include="Images\cac-mon-nuong-ngon-tu-ca-tam.jpg" />
+    <Content Include="Images\cach-che-bien-ga-dong-tao-ham-sa-1.jpg" />
+    <Content Include="Images\cach-lam-mon-gia-cay-5326-1442771213.jpg" />
+    <Content Include="Images\chuyen-to-chuc-tiec.jpg" />
+    <Content Include="Images\chuyentochuctiec.jpg" />
+    <Content Include="Images\dangnhap.jfif" />
+    <Content Include="Images\datmon.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\denhatheotoc.jpg" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\heo-toc-ham-khoai-so.jpg" />
+    <Content Include="Images\heo-toc-quay-lu-4.jpg" />
+    <Content Include="Images\icons8-aed-40.png" />
+    <Content Include="Images\KGNH\bep.jpg" />
+    <Content Include="Images\KGNH\dangnhap.jfif" />
+    <Content Include="Images\KGNH\date.png" />
+    <Content Include="Images\KGNH\fb.png" />
+    <Content Include="Images\KGNH\gmail.png" />
+    <Content Include="Images\KGNH\inta.png" />
+    <Content Include="Images\KGNH\Kho hải sản.jpg" />
+    <Content Include="Images\KGNH\ngoaitroi.jpg" />
+    <Content Include="Images\KGNH\ngoiantiec.jpg" />
+    <Content Include="Images\KGNH\noi-to-chuc-tiec-tat-nien-tot-nhat-sai-gon-tn.jpg" />
+    <Content Include="Images\KGNH\sinhnhat.jpg" />
+    <Content Include="Images\KGNH\tiectrongnha.jpg" />
+    <Content Include="Images\KGNH\vip2.jpg" />
+    <Content Include="Images\lau-ghe-chua-cay-cham-muoi-ot-xanh.jpg" />
+    <Content Include="Images\lauvua.jpg" />
+    <Content Include="Images\login.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logo1.png" />
+    <Content Include="Images\logo2.png" />
+    <Content Include="Images\timkiem.jpg" />
+    <Content Include="Images\trantritiec.jpg" />
+    <Content Include="Images\tym.jpg" />
+    <Content Include="Images\xoi-le-le-1.jpg" />
+    <Content Include="LienHe.aspx" />
+    <Content Include="lienhe.css" />
+    <Content Include="qladmin2.css" />
+    <Content Include="qladmin4.css" />
+    <Content Include="QLDH.aspx" />
+    <Content Include="QLDHADMIN.aspx" />
+    <Content Include="QLML.aspx" />
+    <Content Include="qlnv1.css" />
+    <Content Include="qlnv4.css" />
+    <Content Include="QLSP.aspx" />
+    <Content Include="QLTK.aspx" />
+    <Content Include="QLTKCTADMIN.aspx" />
+    <Content Include="ThongKe.aspx" />
+    <Content Include="ThucDonTiec.aspx" />
+    <Content Include="timkiem.aspx" />
+    <Content Include="TrangChu.aspx" />
+    <Content Include="trangchu2.css" />
+    <Content Include="trangchu4.css" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="XemCTDH.aspx" />
+    <Content Include="XemCTDHNV.aspx" />
+    <Content Include="XemLienHe.aspx" />
+    <Content Include="XemLienHeADMIN.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanChay.aspx.cs">
+      <DependentUpon>BanChay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanChay.aspx.designer.cs">
+      <DependentUpon>BanChay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSP.aspx.cs">
+      <DependentUpon>ChiTietSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietSP.aspx.designer.cs">
+      <DependentUpon>ChiTietSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatHang.aspx.cs">
+      <DependentUpon>DatHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatHang.aspx.designer.cs">
+      <DependentUpon>DatHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatMon.aspx.cs">
+      <DependentUpon>DatMon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatMon.aspx.designer.cs">
+      <DependentUpon>DatMon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.Master.cs">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.Master.designer.cs">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GiamDan.aspx.cs">
+      <DependentUpon>GiamDan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiamDan.aspx.designer.cs">
+      <DependentUpon>GiamDan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiaTangDan.aspx.cs">
+      <DependentUpon>GiaTangDan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaTangDan.aspx.designer.cs">
+      <DependentUpon>GiaTangDan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ketnoics.cs" />
+    <Compile Include="LienHe.aspx.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LienHe.aspx.designer.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDH.aspx.cs">
+      <DependentUpon>QLDH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLDH.aspx.designer.cs">
+      <DependentUpon>QLDH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLDHADMIN.aspx.cs">
+      <DependentUpon>QLDHADMIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLDHADMIN.aspx.designer.cs">
+      <DependentUpon>QLDHADMIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLML.aspx.cs">
+      <DependentUpon>QLML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLML.aspx.designer.cs">
+      <DependentUpon>QLML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLSP.aspx.cs">
+      <DependentUpon>QLSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLSP.aspx.designer.cs">
+      <DependentUpon>QLSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLTK.aspx.cs">
+      <DependentUpon>QLTK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLTK.aspx.designer.cs">
+      <DependentUpon>QLTK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLTKCTADMIN.aspx.cs">
+      <DependentUpon>QLTKCTADMIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLTKCTADMIN.aspx.designer.cs">
+      <DependentUpon>QLTKCTADMIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyAdmin.Master.cs">
+      <DependentUpon>QuanLyAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLyAdmin.Master.designer.cs">
+      <DependentUpon>QuanLyAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhanvien.Master.cs">
+      <DependentUpon>QuanLyNhanvien.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanLyNhanvien.Master.designer.cs">
+      <DependentUpon>QuanLyNhanvien.Master</DependentUpon>
+    </Compile>
+    <Compile Include="tanggiambanchay.Master.cs">
+      <DependentUpon>tanggiambanchay.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tanggiambanchay.Master.designer.cs">
+      <DependentUpon>tanggiambanchay.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe.aspx.cs">
+      <DependentUpon>ThongKe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThongKe.aspx.designer.cs">
+      <DependentUpon>ThongKe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThucDonTiec.aspx.cs">
+      <DependentUpon>ThucDonTiec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThucDonTiec.aspx.designer.cs">
+      <DependentUpon>ThucDonTiec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="timkiem.aspx.cs">
+      <DependentUpon>timkiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="timkiem.aspx.designer.cs">
+      <DependentUpon>timkiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XemCTDH.aspx.cs">
+      <DependentUpon>XemCTDH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XemCTDH.aspx.designer.cs">
+      <DependentUpon>XemCTDH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XemCTDHNV.aspx.cs">
+      <DependentUpon>XemCTDHNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XemCTDHNV.aspx.designer.cs">
+      <DependentUpon>XemCTDHNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XemLienHe.aspx.cs">
+      <DependentUpon>XemLienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XemLienHe.aspx.designer.cs">
+      <DependentUpon>XemLienHe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XemLienHeADMIN.aspx.cs">
+      <DependentUpon>XemLienHeADMIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XemLienHeADMIN.aspx.designer.cs">
+      <DependentUpon>XemLienHeADMIN.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.Master" />
+    <None Include="packages.config" />
+    <Content Include="tanggiambanchay.Master" />
+    <Content Include="QuanLyAdmin.Master" />
+    <Content Include="QuanLyNhanvien.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51551</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44344/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
